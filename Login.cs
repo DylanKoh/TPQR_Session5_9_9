@@ -34,7 +34,7 @@ namespace TPQR_Session5_9_9
                     {
                         MessageBox.Show("User not found!");
                     }
-                    else if (findUser.passwd == txtPassword.Text)
+                    else if (findUser.passwd != txtPassword.Text)
                     {
                         MessageBox.Show("Password wrong!");
                     }
