@@ -21,7 +21,7 @@ namespace TPQR_Session5_9_9
         private void btnBack_Click(object sender, EventArgs e)
         {
             Hide();
-            (new AssignSeats()).ShowDialog();
+            (new AdminMainMenu()).ShowDialog();
             Close();
         }
 
@@ -444,7 +444,7 @@ namespace TPQR_Session5_9_9
             }
             else
             {
-               
+
                 using (var context = new Session5Entities())
                 {
                     var getSkill = (from x in context.Skills
@@ -518,7 +518,7 @@ namespace TPQR_Session5_9_9
                         }
                     }
                 }
-               
+
             }
             foreach (var item in listToRemove)
             {
@@ -532,7 +532,66 @@ namespace TPQR_Session5_9_9
             {
                 return false;
             }
-            
+
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            using (var context = new Session5Entities())
+            {
+                if (dataGridView1[e.ColumnIndex, e.RowIndex].Style.BackColor == Color.Blue)
+                {
+                    var getSkill = (from x in context.Skills
+                                    where x.skillName == cbSkill.SelectedItem.ToString()
+                                    select x).FirstOrDefault();
+                    var ID = dataGridView1[e.ColumnIndex, e.RowIndex].Value.ToString().Split('\n')[1];
+                    var getID = (from x in context.Competitors
+                                 where x.skillIdFK == getSkill.skillId && x.competitorId == ID
+                                 select x).FirstOrDefault();
+                    if (getID != null)
+                    {
+                        dataGridView1[e.ColumnIndex, e.RowIndex].ToolTipText = $"{getID.competitorName}, {getID.competitorCountry}";
+                    }
+                   
+                }
+
+            }
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            using (var context = new Session5Entities())
+            {
+                var getSkill = (from x in context.Skills
+                                where x.skillName == cbSkill.SelectedItem.ToString()
+                                select x).FirstOrDefault();
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewColumn cell in dataGridView1.Columns)
+                    {
+                        if (dataGridView1[cell.Index, row.Index].Style.BackColor == Color.Blue)
+                        {
+                            var seat = int.Parse(dataGridView1[cell.Index, row.Index].Value.ToString().Split('\n')[0]);
+                            var competitorID = dataGridView1[cell.Index, row.Index].Value.ToString().Split('\n')[1];
+                            var getCompetitor = (from x in context.Competitors
+                                                 where x.skillIdFK == getSkill.skillId && x.competitorId == competitorID
+                                                 select x).FirstOrDefault();
+                            getCompetitor.assignedSeat = seat;
+
+                        }
+                    }
+                }
+
+                foreach (var item in lbUnassigned.Items)
+                {
+                    var getCompetitor = (from x in context.Competitors
+                                         where x.skillIdFK == getSkill.skillId && item.ToString().Contains(x.competitorName + ", " + x.competitorCountry)
+                                         select x).FirstOrDefault();
+                    getCompetitor.assignedSeat = 0;
+                }
+                context.SaveChanges();
+                MessageBox.Show("Completed seat assignment!");
+            }
         }
     }
 }
