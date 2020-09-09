@@ -415,7 +415,7 @@ namespace TPQR_Session5_9_9
         private void btnRandom_Click(object sender, EventArgs e)
         {
             var boolCheck = random();
-            if (!boolCheck)
+            while (!boolCheck)
             {
                 random();
             }
