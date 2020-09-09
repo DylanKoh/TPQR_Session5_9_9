@@ -30,5 +30,12 @@ namespace TPQR_Session5_9_9
             (new EnterMarks()).ShowDialog();
             Close();
         }
+
+        private void btnViewResults_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new ViewResults()).ShowDialog();
+            Close();
+        }
     }
 }

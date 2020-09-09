@@ -105,6 +105,12 @@
     <Compile Include="User.cs">
       <DependentUpon>Session5Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewResults.Designer.cs">
+      <DependentUpon>ViewResults.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminMainMenu.resx">
       <DependentUpon>AdminMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewResults.resx">
+      <DependentUpon>ViewResults.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

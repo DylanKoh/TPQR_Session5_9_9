@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEnterMarks = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnViewResults = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -114,14 +114,15 @@
             this.btnEnterMarks.UseVisualStyleBackColor = true;
             this.btnEnterMarks.Click += new System.EventHandler(this.btnEnterMarks_Click);
             // 
-            // button3
+            // btnViewResults
             // 
-            this.button3.Location = new System.Drawing.Point(450, 280);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnViewResults.Location = new System.Drawing.Point(397, 270);
+            this.btnViewResults.Name = "btnViewResults";
+            this.btnViewResults.Size = new System.Drawing.Size(206, 52);
+            this.btnViewResults.TabIndex = 6;
+            this.btnViewResults.Text = "View Results";
+            this.btnViewResults.UseVisualStyleBackColor = true;
+            this.btnViewResults.Click += new System.EventHandler(this.btnViewResults_Click);
             // 
             // button4
             // 
@@ -148,7 +149,7 @@
             this.ClientSize = new System.Drawing.Size(1018, 556);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnViewResults);
             this.Controls.Add(this.btnEnterMarks);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -174,7 +175,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEnterMarks;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnViewResults;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
     }
