@@ -37,5 +37,12 @@ namespace TPQR_Session5_9_9
             (new ViewResults()).ShowDialog();
             Close();
         }
+
+        private void btnAnalyzeResults_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new AnalyzeResults()).ShowDialog();
+            Close();
+        }
     }
 }

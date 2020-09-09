@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="AdminMainMenu.Designer.cs">
       <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyzeResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalyzeResults.Designer.cs">
+      <DependentUpon>AnalyzeResults.cs</DependentUpon>
     </Compile>
     <Compile Include="Competition.cs">
       <DependentUpon>Session5Model.tt</DependentUpon>
@@ -113,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="AdminMainMenu.resx">
       <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyzeResults.resx">
+      <DependentUpon>AnalyzeResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnterMarks.resx">
       <DependentUpon>EnterMarks.cs</DependentUpon>
@@ -178,6 +188,8 @@
     <None Include="Resources\ASC_2020_Logo_Monochrome_WhiteBG.bmp" />
     <None Include="Resources\ASC_2020_Logo_Monochrome_BlackBG.bmp" />
     <None Include="Resources\ASC_2020_Logo.png" />
+    <None Include="Resources\6-66683_green-up-arrow-transparent.png" />
+    <None Include="Resources\95-950756_hd-th-lets-upvote-transparent-background-red-down.png" />
     <Content Include="Session5Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Session5Model.Context.cs</LastGenOutput>

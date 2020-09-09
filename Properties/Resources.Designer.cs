@@ -63,6 +63,26 @@ namespace TPQR_Session5_9_9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6_66683_green_up_arrow_transparent {
+            get {
+                object obj = ResourceManager.GetObject("6-66683_green-up-arrow-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _95_950756_hd_th_lets_upvote_transparent_background_red_down {
+            get {
+                object obj = ResourceManager.GetObject("95-950756_hd-th-lets-upvote-transparent-background-red-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ASC_2020_Logo {
             get {
                 object obj = ResourceManager.GetObject("ASC_2020_Logo", resourceCulture);
