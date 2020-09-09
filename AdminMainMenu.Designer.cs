@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAssignSeats = new System.Windows.Forms.Button();
             this.btnEnterMarks = new System.Windows.Forms.Button();
             this.btnViewResults = new System.Windows.Forms.Button();
             this.btnAnalyzeResults = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCalculateBonus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,14 +95,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Administrator Main Menu";
             // 
-            // button1
+            // btnAssignSeats
             // 
-            this.button1.Location = new System.Drawing.Point(450, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAssignSeats.Location = new System.Drawing.Point(397, 151);
+            this.btnAssignSeats.Name = "btnAssignSeats";
+            this.btnAssignSeats.Size = new System.Drawing.Size(206, 52);
+            this.btnAssignSeats.TabIndex = 4;
+            this.btnAssignSeats.Text = "Assign Seat";
+            this.btnAssignSeats.UseVisualStyleBackColor = true;
+            this.btnAssignSeats.Click += new System.EventHandler(this.btnAssignSeats_Click);
             // 
             // btnEnterMarks
             // 
@@ -116,7 +117,7 @@
             // 
             // btnViewResults
             // 
-            this.btnViewResults.Location = new System.Drawing.Point(397, 270);
+            this.btnViewResults.Location = new System.Drawing.Point(397, 267);
             this.btnViewResults.Name = "btnViewResults";
             this.btnViewResults.Size = new System.Drawing.Size(206, 52);
             this.btnViewResults.TabIndex = 6;
@@ -126,7 +127,7 @@
             // 
             // btnAnalyzeResults
             // 
-            this.btnAnalyzeResults.Location = new System.Drawing.Point(397, 330);
+            this.btnAnalyzeResults.Location = new System.Drawing.Point(397, 325);
             this.btnAnalyzeResults.Name = "btnAnalyzeResults";
             this.btnAnalyzeResults.Size = new System.Drawing.Size(206, 52);
             this.btnAnalyzeResults.TabIndex = 7;
@@ -134,25 +135,26 @@
             this.btnAnalyzeResults.UseVisualStyleBackColor = true;
             this.btnAnalyzeResults.Click += new System.EventHandler(this.btnAnalyzeResults_Click);
             // 
-            // button5
+            // btnCalculateBonus
             // 
-            this.button5.Location = new System.Drawing.Point(467, 404);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCalculateBonus.Location = new System.Drawing.Point(397, 383);
+            this.btnCalculateBonus.Name = "btnCalculateBonus";
+            this.btnCalculateBonus.Size = new System.Drawing.Size(206, 52);
+            this.btnCalculateBonus.TabIndex = 8;
+            this.btnCalculateBonus.Text = "Calculate Bonus";
+            this.btnCalculateBonus.UseVisualStyleBackColor = true;
+            this.btnCalculateBonus.Click += new System.EventHandler(this.btnCalculateBonus_Click);
             // 
             // AdminMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 556);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnCalculateBonus);
             this.Controls.Add(this.btnAnalyzeResults);
             this.Controls.Add(this.btnViewResults);
             this.Controls.Add(this.btnEnterMarks);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAssignSeats);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -174,10 +176,10 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAssignSeats;
         private System.Windows.Forms.Button btnEnterMarks;
         private System.Windows.Forms.Button btnViewResults;
         private System.Windows.Forms.Button btnAnalyzeResults;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCalculateBonus;
     }
 }

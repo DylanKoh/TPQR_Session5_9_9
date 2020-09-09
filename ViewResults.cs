@@ -99,8 +99,8 @@ namespace TPQR_Session5_9_9
                 var getResults = (from x in context.Results
                                   where x.Competition.skillIdFK == getSkill.skillId
                                   group x by x.Competitor.competitorName into y
-                                  orderby y.Sum(x => x.totalMarks) descending
                                   orderby y.Key
+                                  orderby y.Sum(x => x.totalMarks) descending
                                   select y);
                 foreach (var item in getResults)
                 {

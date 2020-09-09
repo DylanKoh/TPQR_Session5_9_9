@@ -246,6 +246,7 @@
             this.pbGold2.Location = new System.Drawing.Point(271, 31);
             this.pbGold2.Name = "pbGold2";
             this.pbGold2.Size = new System.Drawing.Size(100, 50);
+            this.pbGold2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGold2.TabIndex = 1;
             this.pbGold2.TabStop = false;
             // 
@@ -254,6 +255,7 @@
             this.pbGold1.Location = new System.Drawing.Point(78, 31);
             this.pbGold1.Name = "pbGold1";
             this.pbGold1.Size = new System.Drawing.Size(100, 50);
+            this.pbGold1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGold1.TabIndex = 0;
             this.pbGold1.TabStop = false;
             // 
@@ -262,6 +264,7 @@
             this.pbSilver1.Location = new System.Drawing.Point(78, 31);
             this.pbSilver1.Name = "pbSilver1";
             this.pbSilver1.Size = new System.Drawing.Size(100, 50);
+            this.pbSilver1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSilver1.TabIndex = 0;
             this.pbSilver1.TabStop = false;
             // 
@@ -270,6 +273,7 @@
             this.pbSilver2.Location = new System.Drawing.Point(271, 31);
             this.pbSilver2.Name = "pbSilver2";
             this.pbSilver2.Size = new System.Drawing.Size(100, 50);
+            this.pbSilver2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSilver2.TabIndex = 1;
             this.pbSilver2.TabStop = false;
             // 
@@ -324,6 +328,7 @@
             this.pbBronze2.Location = new System.Drawing.Point(271, 31);
             this.pbBronze2.Name = "pbBronze2";
             this.pbBronze2.Size = new System.Drawing.Size(100, 50);
+            this.pbBronze2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBronze2.TabIndex = 1;
             this.pbBronze2.TabStop = false;
             // 
@@ -332,6 +337,7 @@
             this.pbBronze1.Location = new System.Drawing.Point(78, 31);
             this.pbBronze1.Name = "pbBronze1";
             this.pbBronze1.Size = new System.Drawing.Size(100, 50);
+            this.pbBronze1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBronze1.TabIndex = 0;
             this.pbBronze1.TabStop = false;
             // 

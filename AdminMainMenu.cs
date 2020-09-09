@@ -44,5 +44,19 @@ namespace TPQR_Session5_9_9
             (new AnalyzeResults()).ShowDialog();
             Close();
         }
+
+        private void btnCalculateBonus_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new CalculateBonus()).ShowDialog();
+            Close();
+        }
+
+        private void btnAssignSeats_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new AssignSeats()).ShowDialog();
+            Close();
+        }
     }
 }
