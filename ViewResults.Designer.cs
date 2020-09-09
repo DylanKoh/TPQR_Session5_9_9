@@ -44,9 +44,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblCompletedSessions = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pbGold1 = new System.Windows.Forms.PictureBox();
-            this.pbGold2 = new System.Windows.Forms.PictureBox();
             this.btnGold = new System.Windows.Forms.Button();
+            this.pbGold2 = new System.Windows.Forms.PictureBox();
+            this.pbGold1 = new System.Windows.Forms.PictureBox();
             this.pbSilver1 = new System.Windows.Forms.PictureBox();
             this.pbSilver2 = new System.Windows.Forms.PictureBox();
             this.btnSilver = new System.Windows.Forms.Button();
@@ -58,8 +58,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGold1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGold2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGold1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSilver1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSilver2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -230,22 +230,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gold";
             // 
-            // pbGold1
-            // 
-            this.pbGold1.Location = new System.Drawing.Point(78, 31);
-            this.pbGold1.Name = "pbGold1";
-            this.pbGold1.Size = new System.Drawing.Size(100, 50);
-            this.pbGold1.TabIndex = 0;
-            this.pbGold1.TabStop = false;
-            // 
-            // pbGold2
-            // 
-            this.pbGold2.Location = new System.Drawing.Point(271, 31);
-            this.pbGold2.Name = "pbGold2";
-            this.pbGold2.Size = new System.Drawing.Size(100, 50);
-            this.pbGold2.TabIndex = 1;
-            this.pbGold2.TabStop = false;
-            // 
             // btnGold
             // 
             this.btnGold.Location = new System.Drawing.Point(154, 102);
@@ -255,6 +239,23 @@
             this.btnGold.Text = "More Gold";
             this.btnGold.UseVisualStyleBackColor = true;
             this.btnGold.Visible = false;
+            this.btnGold.Click += new System.EventHandler(this.btnGold_Click);
+            // 
+            // pbGold2
+            // 
+            this.pbGold2.Location = new System.Drawing.Point(271, 31);
+            this.pbGold2.Name = "pbGold2";
+            this.pbGold2.Size = new System.Drawing.Size(100, 50);
+            this.pbGold2.TabIndex = 1;
+            this.pbGold2.TabStop = false;
+            // 
+            // pbGold1
+            // 
+            this.pbGold1.Location = new System.Drawing.Point(78, 31);
+            this.pbGold1.Name = "pbGold1";
+            this.pbGold1.Size = new System.Drawing.Size(100, 50);
+            this.pbGold1.TabIndex = 0;
+            this.pbGold1.TabStop = false;
             // 
             // pbSilver1
             // 
@@ -281,6 +282,7 @@
             this.btnSilver.Text = "More Silver";
             this.btnSilver.UseVisualStyleBackColor = true;
             this.btnSilver.Visible = false;
+            this.btnSilver.Click += new System.EventHandler(this.btnSilver_Click);
             // 
             // groupBox2
             // 
@@ -315,6 +317,7 @@
             this.btnBronze.Text = "More Bronze";
             this.btnBronze.UseVisualStyleBackColor = true;
             this.btnBronze.Visible = false;
+            this.btnBronze.Click += new System.EventHandler(this.btnBronze_Click);
             // 
             // pbBronze2
             // 
@@ -351,7 +354,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ViewResults";
             this.Text = "View Results";
             this.Load += new System.EventHandler(this.ViewResults_Load);
@@ -359,8 +362,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbGold1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGold2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGold1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSilver1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSilver2)).EndInit();
             this.groupBox2.ResumeLayout(false);
