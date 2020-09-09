@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -124,6 +125,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\switzerland_old.png" />
+    <None Include="Resources\southkorea_flag_new.png" />
+    <None Include="Resources\singapore_flag1.png" />
+    <None Include="Resources\old_greece.png" />
+    <None Include="Resources\newzealand_flg5.png" />
+    <None Include="Resources\myanmar3.png" />
+    <None Include="Resources\maldivesfg.png" />
+    <None Include="Resources\laos_newflg.png" />
+    <None Include="Resources\indonesia2.png" />
+    <None Include="Resources\flg_vietnam_new.png" />
+    <None Include="Resources\flg_thailand.png" />
+    <None Include="Resources\flg_qatar.png" />
+    <None Include="Resources\flg_philippine1.png" />
+    <None Include="Resources\flg_india.png" />
+    <None Include="Resources\flagmalaysia.png" />
+    <None Include="Resources\flag_russia.png" />
+    <None Include="Resources\flag_cambodia.png" />
+    <None Include="Resources\chinaflag.png" />
+    <None Include="Resources\brunei_flag.png" />
+    <None Include="Resources\australia_flg.png" />
+    <None Include="Resources\ASC_2020_Logo_Monochrome_WhiteBG.bmp" />
+    <None Include="Resources\ASC_2020_Logo_Monochrome_BlackBG.bmp" />
+    <None Include="Resources\ASC_2020_Logo.png" />
     <Content Include="Session5Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Session5Model.Context.cs</LastGenOutput>
